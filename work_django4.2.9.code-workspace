@@ -11,7 +11,7 @@
 				"!Module"
 			],
 			"editor.formatOnType": true,
-			"editor.wordBasedSuggestions": false,
+			"editor.wordBasedSuggestions": "off",
 			"editor.defaultFormatter": "ms-python.autopep8",
 			"editor.formatOnSave": true
 		}

@@ -12,7 +12,9 @@
 ## モデル作成のステップ
    ・ models.pyでモデルの定義をする
    ・ マイグレーションファイルを作成する
+     ・ python manage.py makemigrations
    ・ マイグレーションファイルを元にテーブルを作成する
+     ・ python manage.py migrate
 
 ## ImageFieldを扱う
    ・ Pillowをインストールする
