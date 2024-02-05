@@ -20,3 +20,15 @@
    ・ Pillowをインストールする
    　→ pip install pillow
    
+## 管理者画面の設定
+   ・ python manage.py createsuperuser
+      ・ ユーザー名： admin
+      ・ パスワード: 0
+   ・ http://127.0.0.1:8000/admin
+   ・ アプリ(album)/admin.pyの編集
+     → 管理画面からテーブル(model)のデータの参照、登録、更新、削除が可能となる。
+
+## フリー画像の掲載サイト
+   ・ O-DAN https://o-dan.net/ja/
+            https://unsplash.com/photos/73pyV0JJOmE
+            
