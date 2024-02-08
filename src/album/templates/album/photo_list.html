@@ -10,9 +10,10 @@
                 <div class="card-body">
                     <p class="card-text">
                         {% for tag in photo.tags.all %}
-                        #{{tag}}
+                        #{{ tag }}
                         {% endfor %}
                     </p>
+                    <a href="{% url 'photo-detail' photo.pk %}">詳細>></a>
                 </div>
             </div>
         </div>
