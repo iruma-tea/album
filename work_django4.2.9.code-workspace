@@ -14,6 +14,20 @@
 			"editor.wordBasedSuggestions": "off",
 			"editor.defaultFormatter": "ms-python.autopep8",
 			"editor.formatOnSave": true
+		},
+		"[django-html]": {
+			"editor.quickSuggestions": {
+				"other": true,
+				"comments": true,
+				"strings": true
+			},
+		},
+		"emmet.includeLanguages": {
+			"django-html": "html",
+		},
+		"files.associations": {
+			"*.html": "html",
+			"**/templates/**/*.html": "django-html"
 		}
 	}
 }
