@@ -10,6 +10,12 @@ class PhotoListView(ListView):
     template_name = "album/photo_list.html"
     context_object_name = "photos"
 
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+
+        context["tags"] = Tag.objects.all()
+        return context
+
 
 class PhotoDetailView(DetailView):
     model = Photo
@@ -26,3 +32,9 @@ class TagPhotoListView(ListView):
         tag_name = self.kwargs["tag"]
         tag = get_object_or_404(Tag, name=tag_name)
         return super().get_queryset().filter(tags=tag)
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+
+        context["tag"] = self.kwargs["tag"]
+        return context
