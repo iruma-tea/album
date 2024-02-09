@@ -1,4 +1,5 @@
 {% extends "album/base.html" %}
+{% load widget_tweaks %}
 
 {% block content %}
 <div class="container">
@@ -11,15 +12,15 @@
                         {% csrf_token %}
                         <div class="mb-3">
                             <label class="form-label">画像</label>
-                            {{ form.image }}
+                            {{ form.image | add_class:'form-control' }}
                         </div>
                         <div class="mb-3">
                             <label class="form-label">概要</label>
-                            {{ form.description }}
+                            {{ form.description | add_class:'form-control' }}
                         </div>
                         <div class="mb-3">
                             <label class="form-label">タグ</label>
-                            {{ form.tags }}
+                            {{ form.tags | add_class:'form-control' }}
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary">登録</button>

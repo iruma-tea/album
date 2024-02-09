@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'album.apps.AlbumConfig',  # 追加
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
