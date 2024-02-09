@@ -6,6 +6,9 @@
         <div class="col-lg-6 col-md8 mx-auto">
             <h1 class="fw-light">Django Album</h1>
             <p class="lead text-muted">思い出を記録しましょう！</p>
+            <p>
+                <a href="{% url 'photo-create' %}" class="btn btn-secondary my-2">写真を追加する</a>
+            </p>
             <p class="pt-4 fs-5">
                 {% for tag in tags %}
                 <span class="badge rounded-pill bg-light">

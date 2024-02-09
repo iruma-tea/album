@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Tag, Photo
+from django.urls import reverse_lazy
 
 # Create your views here.
 
@@ -55,3 +56,10 @@ class TagPhotoListView(ListView):
         context["photos"] = photos
 
         return context
+
+
+class PhotoCreateView(CreateView):
+    model = Photo
+    template_name = "album/photo_create.html"
+    fields = "__all__"
+    success_url = reverse_lazy("photo-list")
