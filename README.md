@@ -32,3 +32,5 @@
    ・ O-DAN https://o-dan.net/ja/
             https://unsplash.com/photos/73pyV0JJOmE
             
+## フォーム要素にclassを追加するライブラリ
+   ・ pip install django-widget-tweaks
